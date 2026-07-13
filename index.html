@@ -11,7 +11,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(180deg, #87CEEB 0%, #B0D4F1 30%, #C8E0F5 60%, #D6E8F8 100%);
+      background: linear-gradient(180deg, #5B9BD5 0%, #7BB3E0 30%, #9ECAE8 60%, #B8D4E8 100%);
       font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
       padding: 20px;
       overflow: hidden;
@@ -19,33 +19,33 @@
     }
     .cloud {
       position: absolute;
-      background: white;
+      background: #FFFFFF;
       border-radius: 50px;
-      opacity: 0.9;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      opacity: 0.95;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
     .cloud::before, .cloud::after {
       content: '';
       position: absolute;
-      background: white;
+      background: #FFFFFF;
       border-radius: 50%;
     }
     .c1 { width: 180px; height: 60px; top: 8%; left: -5%; animation: cloudFloat1 25s linear infinite; }
     .c1::before { width: 70px; height: 70px; top: -25px; left: 30px; }
     .c1::after { width: 90px; height: 90px; top: -35px; left: 70px; }
-    .c2 { width: 160px; height: 55px; top: 15%; right: -3%; animation: cloudFloat2 30s linear infinite; }
+    .c2 { width: 160px; height: 55px; top: 15%; right: -3%; opacity: 0.9; animation: cloudFloat2 30s linear infinite; }
     .c2::before { width: 60px; height: 60px; top: -20px; left: 25px; }
     .c2::after { width: 80px; height: 80px; top: -30px; left: 60px; }
-    .c3 { width: 140px; height: 50px; top: 65%; left: 5%; opacity: 0.7; animation: cloudFloat1 35s linear infinite reverse; }
+    .c3 { width: 140px; height: 50px; top: 65%; left: 5%; opacity: 0.8; animation: cloudFloat1 35s linear infinite reverse; }
     .c3::before { width: 55px; height: 55px; top: -18px; left: 20px; }
     .c3::after { width: 70px; height: 70px; top: -25px; left: 55px; }
-    .c4 { width: 150px; height: 52px; top: 75%; right: 8%; opacity: 0.75; animation: cloudFloat2 28s linear infinite reverse; }
+    .c4 { width: 150px; height: 52px; top: 75%; right: 8%; opacity: 0.85; animation: cloudFloat2 28s linear infinite reverse; }
     .c4::before { width: 58px; height: 58px; top: -20px; left: 22px; }
     .c4::after { width: 75px; height: 75px; top: -28px; left: 58px; }
-    .c5 { width: 130px; height: 45px; top: 35%; left: -8%; opacity: 0.6; animation: cloudFloat1 32s linear infinite; }
+    .c5 { width: 130px; height: 45px; top: 35%; left: -8%; opacity: 0.7; animation: cloudFloat1 32s linear infinite; }
     .c5::before { width: 50px; height: 50px; top: -15px; left: 18px; }
     .c5::after { width: 65px; height: 65px; top: -22px; left: 48px; }
-    .c6 { width: 170px; height: 58px; top: 50%; right: -6%; opacity: 0.65; animation: cloudFloat2 26s linear infinite; }
+    .c6 { width: 170px; height: 58px; top: 50%; right: -6%; opacity: 0.75; animation: cloudFloat2 26s linear infinite; }
     .c6::before { width: 65px; height: 65px; top: -22px; left: 28px; }
     .c6::after { width: 85px; height: 85px; top: -32px; left: 68px; }
     
@@ -54,22 +54,22 @@
     .planet-ring {
       position: absolute;
       top: 50%; left: 50%;
-      border: 3px solid rgba(255,200,100,0.7);
+      border: 3px solid rgba(255,200,100,0.8);
       border-radius: 50%;
     }
     .p1 { top: 6%; left: 8%; animation: planetFloat1 8s ease-in-out infinite; }
-    .p1 .planet { width: 50px; height: 50px; background: linear-gradient(135deg, #4ECDC4, #44A08D); box-shadow: 0 4px 15px rgba(78,205,196,0.4), inset -5px -5px 10px rgba(0,0,0,0.1); }
+    .p1 .planet { width: 50px; height: 50px; background: linear-gradient(135deg, #26A69A, #00897B); box-shadow: 0 4px 15px rgba(38,166,154,0.5), inset -5px -5px 10px rgba(0,0,0,0.15); }
     .p1 .planet-ring { width: 70px; height: 12px; transform: translate(-50%, -50%) rotate(-20deg); }
     .p2 { top: 10%; right: 10%; animation: planetFloat2 10s ease-in-out infinite; }
-    .p2 .planet { width: 55px; height: 55px; background: linear-gradient(135deg, #F4A460, #D2691E); box-shadow: 0 4px 15px rgba(244,164,96,0.4), inset -5px -5px 10px rgba(0,0,0,0.1); }
-    .p2 .planet-ring { width: 80px; height: 14px; transform: translate(-50%, -50%) rotate(15deg); border-color: rgba(255,220,150,0.6); }
+    .p2 .planet { width: 55px; height: 55px; background: linear-gradient(135deg, #F4A460, #D2691E); box-shadow: 0 4px 15px rgba(244,164,96,0.5), inset -5px -5px 10px rgba(0,0,0,0.15); }
+    .p2 .planet-ring { width: 80px; height: 14px; transform: translate(-50%, -50%) rotate(15deg); border-color: rgba(255,220,150,0.7); }
     .p3 { top: 38%; left: 3%; animation: planetFloat3 7s ease-in-out infinite; }
-    .p3 .planet { width: 35px; height: 35px; background: linear-gradient(135deg, #4CAF50, #2196F3); box-shadow: 0 3px 10px rgba(33,150,243,0.3); }
+    .p3 .planet { width: 35px; height: 35px; background: linear-gradient(135deg, #43A047, #1976D2); box-shadow: 0 3px 10px rgba(25,118,210,0.4); }
     .p4 { top: 28%; right: 5%; animation: planetFloat1 9s ease-in-out infinite reverse; }
-    .p4 .planet { width: 28px; height: 28px; background: linear-gradient(135deg, #FF6B6B, #EE5A5A); box-shadow: 0 3px 10px rgba(255,107,107,0.3); }
+    .p4 .planet { width: 28px; height: 28px; background: linear-gradient(135deg, #EF5350, #D32F2F); box-shadow: 0 3px 10px rgba(239,83,80,0.4); }
     .p5 { bottom: 15%; right: 6%; animation: planetFloat2 11s ease-in-out infinite; }
-    .p5 .planet { width: 45px; height: 45px; background: linear-gradient(135deg, #9B59B6, #8E44AD); box-shadow: 0 4px 15px rgba(155,89,182,0.4); }
-    .p5 .planet-ring { width: 65px; height: 10px; transform: translate(-50%, -50%) rotate(-10deg); border-color: rgba(200,150,255,0.5); border-width: 2px; }
+    .p5 .planet { width: 45px; height: 45px; background: linear-gradient(135deg, #8E24AA, #6A1B9A); box-shadow: 0 4px 15px rgba(142,36,170,0.5); }
+    .p5 .planet-ring { width: 65px; height: 10px; transform: translate(-50%, -50%) rotate(-10deg); border-color: rgba(200,150,255,0.6); border-width: 2px; }
     
     .plane { position: absolute; pointer-events: none; z-index: 1; }
     .pl1 { top: 18%; left: 25%; animation: planeFloat1 12s ease-in-out infinite; }
@@ -85,38 +85,38 @@
     .card {
       position: relative;
       z-index: 2;
-      background: linear-gradient(180deg, #E8F5E9 0%, #D4EDDA 50%, #C8E6C9 100%);
+      background: linear-gradient(180deg, #C8E6C9 0%, #A5D6A7 50%, #81C784 100%);
       border-radius: 24px;
       padding: 40px 32px;
       max-width: 380px;
       width: 100%;
       text-align: center;
-      border: 3px solid rgba(255,255,255,0.6);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.1), inset 0 2px 0 rgba(255,255,255,0.8), 0 0 0 1px rgba(0,0,0,0.05);
+      border: 4px solid #2E7D32;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.2), inset 0 2px 0 rgba(255,255,255,0.5), 0 0 0 2px rgba(46,125,50,0.3);
     }
     
     .avatar-wrap { position: relative; width: 120px; height: 120px; margin: 0 auto 16px; }
     .avatar-ring {
       position: absolute;
-      top: -5px; left: -5px; right: -5px; bottom: -5px;
+      top: -6px; left: -6px; right: -6px; bottom: -6px;
       border-radius: 50%;
-      background: conic-gradient(from 0deg, #00BCD4, #4ECDC4, #00BCD4);
+      background: conic-gradient(from 0deg, #00ACC1, #00838F, #00ACC1);
       animation: spin 6s linear infinite;
-      opacity: 0.8;
+      opacity: 0.9;
     }
     .avatar {
       position: relative;
       width: 100%; height: 100%;
       border-radius: 50%;
       overflow: hidden;
-      border: 4px solid #1a237e;
-      box-shadow: 0 8px 25px rgba(0,188,212,0.3);
+      border: 4px solid #1A237E;
+      box-shadow: 0 8px 25px rgba(0,172,193,0.4), 0 0 0 3px rgba(26,35,126,0.2);
     }
     .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
     
-    h1 { font-size: 36px; font-weight: 800; color: #546E7A; margin-bottom: 4px; letter-spacing: 1px; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    .handle { font-size: 14px; color: #00ACC1; font-weight: 700; letter-spacing: 2px; margin-bottom: 8px; }
-    .bio { font-size: 15px; color: #5D4037; direction: rtl; font-weight: 600; margin-bottom: 28px; }
+    h1 { font-size: 38px; font-weight: 900; color: #1A237E; margin-bottom: 4px; letter-spacing: 1px; text-shadow: 0 2px 0 rgba(255,255,255,0.5), 0 3px 6px rgba(0,0,0,0.15); }
+    .handle { font-size: 15px; color: #00695C; font-weight: 800; letter-spacing: 2px; margin-bottom: 8px; text-shadow: 0 1px 2px rgba(255,255,255,0.5); }
+    .bio { font-size: 16px; color: #3E2723; direction: rtl; font-weight: 700; margin-bottom: 28px; text-shadow: 0 1px 2px rgba(255,255,255,0.4); }
     
     .link-btn {
       display: flex;
@@ -127,11 +127,11 @@
       color: white;
       text-decoration: none;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 14px;
       transition: all 0.3s ease;
-      border: 2px solid rgba(255,255,255,0.3);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.2);
+      border: 3px solid;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.2);
     }
     .link-btn:hover { transform: translateY(-3px) scale(1.02); }
     .link-btn .icon-box {
@@ -141,18 +141,18 @@
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      backdrop-filter: blur(5px);
+      border: 2px solid rgba(255,255,255,0.3);
     }
     .link-btn .info { text-align: right; flex: 1; }
-    .link-btn .info .title { font-size: 16px; font-weight: 800; }
-    .link-btn .info .sub { font-size: 12px; opacity: 0.9; margin-top: 2px; font-weight: 500; }
+    .link-btn .info .title { font-size: 17px; font-weight: 900; text-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    .link-btn .info .sub { font-size: 13px; opacity: 0.95; margin-top: 2px; font-weight: 600; }
     
-    .youtube { background: linear-gradient(135deg, #E57373, #EF5350); box-shadow: 0 6px 20px rgba(239,83,80,0.3); }
-    .youtube:hover { box-shadow: 0 10px 30px rgba(239,83,80,0.5); }
-    .youtube .icon-box { background: rgba(255,255,255,0.25); }
+    .youtube { background: linear-gradient(135deg, #D32F2F, #B71C1C); border-color: #8B0000; box-shadow: 0 6px 20px rgba(211,47,47,0.4); }
+    .youtube:hover { box-shadow: 0 12px 35px rgba(211,47,47,0.6); }
+    .youtube .icon-box { background: rgba(255,255,255,0.2); }
     
-    .tiktok { background: linear-gradient(135deg, #424242, #616161); box-shadow: 0 6px 20px rgba(66,66,66,0.3); }
-    .tiktok:hover { box-shadow: 0 10px 30px rgba(66,66,66,0.5); }
+    .tiktok { background: linear-gradient(135deg, #212121, #424242); border-color: #000000; box-shadow: 0 6px 20px rgba(33,33,33,0.4); }
+    .tiktok:hover { box-shadow: 0 12px 35px rgba(33,33,33,0.6); }
     .tiktok .icon-box { background: rgba(255,255,255,0.15); }
     
     .discord-coming {
@@ -161,31 +161,31 @@
       gap: 14px;
       padding: 16px 20px;
       border-radius: 16px;
-      background: linear-gradient(135deg, rgba(144,164,174,0.4), rgba(176,190,197,0.35));
-      color: #546E7A;
+      background: linear-gradient(135deg, #90A4AE, #B0BEC5);
+      color: #263238;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 14px;
-      border: 2px dashed rgba(144,164,174,0.5);
-      box-shadow: 0 4px 15px rgba(144,164,174,0.15);
+      border: 3px dashed #546E7A;
+      box-shadow: 0 4px 15px rgba(84,110,122,0.2);
       cursor: not-allowed;
-      opacity: 0.85;
     }
     .discord-coming .icon-box {
       width: 42px; height: 42px;
       border-radius: 12px;
-      background: rgba(144,164,174,0.2);
+      background: rgba(255,255,255,0.3);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+      border: 2px solid rgba(255,255,255,0.4);
     }
     .soon-dot {
-      width: 7px; height: 7px;
+      width: 8px; height: 8px;
       border-radius: 50%;
-      background: #FF9800;
+      background: #FF6F00;
       animation: pulse 2s ease-in-out infinite;
-      box-shadow: 0 0 8px rgba(255,152,0,0.5);
+      box-shadow: 0 0 10px rgba(255,111,0,0.6);
       display: inline-block;
       margin-left: 6px;
     }
@@ -193,15 +193,16 @@
     .footer {
       margin-top: 28px;
       padding-top: 20px;
-      border-top: 2px solid rgba(0,0,0,0.06);
-      font-size: 14px;
-      color: #5D4037;
+      border-top: 3px solid rgba(46,125,50,0.2);
+      font-size: 15px;
+      color: #1B5E20;
       direction: rtl;
-      font-weight: 600;
+      font-weight: 800;
+      text-shadow: 0 1px 2px rgba(255,255,255,0.4);
     }
     
     @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.7); } }
+    @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.6); } }
     @keyframes cloudFloat1 { 0% { transform: translateX(-50px); } 50% { transform: translateX(30px); } 100% { transform: translateX(-50px); } }
     @keyframes cloudFloat2 { 0% { transform: translateX(30px); } 50% { transform: translateX(-40px); } 100% { transform: translateX(30px); } }
     @keyframes planetFloat1 { 0%,100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-15px) rotate(5deg); } }
@@ -227,38 +228,38 @@
   <div class="planet-wrap p4"><div class="planet"></div></div>
   <div class="planet-wrap p5"><div class="planet"><div class="planet-ring"></div></div></div>
   
-  <div class="plane pl1"><svg width="28" height="28" viewBox="0 0 24 24" fill="#FF8C42" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));"><path d="M2 12l20-9-9 20-2-9-9-2z"/></svg></div>
-  <div class="plane pl2"><svg width="22" height="22" viewBox="0 0 24 24" fill="#6C5CE7" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));"><path d="M2 12l20-9-9 20-2-9-9-2z"/></svg></div>
-  <div class="plane pl3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#00B894" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));"><path d="M2 12l20-9-9 20-2-9-9-2z"/></svg></div>
+  <div class="plane pl1"><svg width="28" height="28" viewBox="0 0 24 24" fill="#E65100" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.15));"><path d="M2 12l20-9-9 20-2-9-9-2z"/></svg></div>
+  <div class="plane pl2"><svg width="22" height="22" viewBox="0 0 24 24" fill="#4527A0" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.15));"><path d="M2 12l20-9-9 20-2-9-9-2z"/></svg></div>
+  <div class="plane pl3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#00695C" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.15));"><path d="M2 12l20-9-9 20-2-9-9-2z"/></svg></div>
   
   <div class="rocket">
-    <svg width="45" height="60" viewBox="0 0 24 24" fill="none" style="filter:drop-shadow(0 3px 6px rgba(0,0,0,0.15));">
-      <path d="M12 2C12 2 6 8 6 14C6 17.31 8.69 20 12 20C15.31 20 18 17.31 18 14C18 8 12 2 12 2Z" fill="#FF6B6B"/>
-      <path d="M12 20V22" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round"/>
-      <path d="M8 16C8 16 6 18 6 20C6 21 7 22 8 22" fill="#FF8E8E"/>
-      <path d="M16 16C16 16 18 18 18 20C18 21 17 22 16 22" fill="#FF8E8E"/>
-      <circle cx="12" cy="12" r="3" fill="#FFE66D"/>
-      <path d="M10 22L12 18L14 22" fill="#FF4757"/>
-      <ellipse cx="12" cy="24" rx="4" ry="2" fill="#FFA502" opacity="0.6"/>
-      <ellipse cx="12" cy="26" rx="3" ry="1.5" fill="#FF6348" opacity="0.4"/>
+    <svg width="45" height="60" viewBox="0 0 24 24" fill="none" style="filter:drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+      <path d="M12 2C12 2 6 8 6 14C6 17.31 8.69 20 12 20C15.31 20 18 17.31 18 14C18 8 12 2 12 2Z" fill="#D32F2F"/>
+      <path d="M12 20V22" stroke="#B71C1C" stroke-width="2" stroke-linecap="round"/>
+      <path d="M8 16C8 16 6 18 6 20C6 21 7 22 8 22" fill="#EF5350"/>
+      <path d="M16 16C16 16 18 18 18 20C18 21 17 22 16 22" fill="#EF5350"/>
+      <circle cx="12" cy="12" r="3" fill="#FFD54F"/>
+      <path d="M10 22L12 18L14 22" fill="#C62828"/>
+      <ellipse cx="12" cy="24" rx="4" ry="2" fill="#FF6F00" opacity="0.7"/>
+      <ellipse cx="12" cy="26" rx="3" ry="1.5" fill="#FF3D00" opacity="0.5"/>
     </svg>
   </div>
   
   <div class="astro">
-    <svg width="50" height="55" viewBox="0 0 24 24" fill="none" style="filter:drop-shadow(0 3px 6px rgba(0,0,0,0.15));">
-      <circle cx="12" cy="8" r="6" fill="#E8E8E8" stroke="#B8B8B8" stroke-width="1"/>
-      <ellipse cx="12" cy="8" rx="4" ry="3.5" fill="#2C3E50"/>
-      <ellipse cx="11" cy="7" rx="2" ry="1.5" fill="#3498DB" opacity="0.6"/>
-      <rect x="7" y="13" width="10" height="8" rx="3" fill="#E8E8E8" stroke="#B8B8B8" stroke-width="1"/>
-      <rect x="9" y="15" width="6" height="3" rx="1" fill="#B8B8B8"/>
-      <circle cx="10.5" cy="16.5" r="0.8" fill="#E74C3C"/>
-      <circle cx="12" cy="16.5" r="0.8" fill="#2ECC71"/>
-      <circle cx="13.5" cy="16.5" r="0.8" fill="#3498DB"/>
-      <rect x="5" y="12" width="3" height="7" rx="1" fill="#D0D0D0" stroke="#B0B0B0" stroke-width="0.5"/>
-      <ellipse cx="5" cy="16" rx="2" ry="1.5" fill="#E8E8E8" stroke="#B8B8B8" stroke-width="0.5"/>
-      <ellipse cx="19" cy="16" rx="2" ry="1.5" fill="#E8E8E8" stroke="#B8B8B8" stroke-width="0.5"/>
-      <rect x="8" y="20" width="3" height="4" rx="1" fill="#E8E8E8" stroke="#B8B8B8" stroke-width="0.5"/>
-      <rect x="13" y="20" width="3" height="4" rx="1" fill="#E8E8E8" stroke="#B8B8B8" stroke-width="0.5"/>
+    <svg width="50" height="55" viewBox="0 0 24 24" fill="none" style="filter:drop-shadow(0 3px 6px rgba(0,0,0,0.2));">
+      <circle cx="12" cy="8" r="6" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1.5"/>
+      <ellipse cx="12" cy="8" rx="4" ry="3.5" fill="#263238"/>
+      <ellipse cx="11" cy="7" rx="2" ry="1.5" fill="#42A5F5" opacity="0.7"/>
+      <rect x="7" y="13" width="10" height="8" rx="3" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1.5"/>
+      <rect x="9" y="15" width="6" height="3" rx="1" fill="#E0E0E0"/>
+      <circle cx="10.5" cy="16.5" r="0.8" fill="#D32F2F"/>
+      <circle cx="12" cy="16.5" r="0.8" fill="#388E3C"/>
+      <circle cx="13.5" cy="16.5" r="0.8" fill="#1976D2"/>
+      <rect x="5" y="12" width="3" height="7" rx="1" fill="#E0E0E0" stroke="#BDBDBD" stroke-width="0.5"/>
+      <ellipse cx="5" cy="16" rx="2" ry="1.5" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="0.5"/>
+      <ellipse cx="19" cy="16" rx="2" ry="1.5" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="0.5"/>
+      <rect x="8" y="20" width="3" height="4" rx="1" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="0.5"/>
+      <rect x="13" y="20" width="3" height="4" rx="1" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="0.5"/>
     </svg>
   </div>
   
@@ -266,7 +267,6 @@
     <div class="avatar-wrap">
       <div class="avatar-ring"></div>
       <div class="avatar">
-        <!-- ⚠️ غير اللينك ده للصورة بتاعتك -->
         <img src="logo.png" alt="Veln Logo">
       </div>
     </div>
@@ -282,7 +282,7 @@
         <div class="title">قناة اليوتيوب</div>
         <div class="sub">@_Veln</div>
       </div>
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.8;"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.9;"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
     </a>
     
     <a href="https://www.tiktok.com/@veln_n" target="_blank" class="link-btn tiktok">
@@ -293,18 +293,18 @@
         <div class="title">تيك توك</div>
         <div class="sub">@veln_n</div>
       </div>
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.8;"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.9;"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
     </a>
     
     <div class="discord-coming">
       <div class="icon-box">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="#78909C"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#37474F"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
       </div>
       <div class="info">
         <div class="title">سيرفر الديسكورد</div>
         <div class="sub"><span class="soon-dot"></span>قريباً</div>
       </div>
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#90A4AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.4;"><path d="M12 15v3m-3 0h6M4.5 19.5l15-15"/></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#546E7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.5;"><path d="M12 15v3m-3 0h6M4.5 19.5l15-15"/></svg>
     </div>
     
     <div class="footer">❤️ تابعني على كل المنصات وخليك معايا</div>
